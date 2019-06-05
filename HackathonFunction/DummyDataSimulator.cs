@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using System.Configuration;
+using System.Threading;
 
 namespace Pensive
 {
@@ -38,6 +39,7 @@ namespace Pensive
                 });
             });
 
+            Thread.Sleep(30000);
             int counter = 1;
             foreach (PassengerInfo passenger in passengerInfoList)
             {
@@ -52,6 +54,7 @@ namespace Pensive
                 };
 
                 dbContext.Add(travelRecord);
+                counter += 1;
                 if (counter >= 100)
                 {
                     dbContext.SaveChanges();

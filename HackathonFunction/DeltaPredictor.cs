@@ -29,7 +29,7 @@ namespace Pensive
             {
                 for (int i = 1; i <= 36; i++)
                 {
-                    inpuToMLService.Values.SetValue(place, rowIndex, 0);
+                    inpuToMLService.Values.SetValue(place.TrimStart(), rowIndex, 0);
                     inpuToMLService.Values.SetValue(DateTime.Today.AddMonths(i).Year.ToString(), rowIndex, 1);
                     inpuToMLService.Values.SetValue(DateTime.Today.AddMonths(i).Month.ToString(), rowIndex, 2);
                     rowIndex += 1;
@@ -80,7 +80,7 @@ namespace Pensive
                     foreach (List<string> predictedRecord in predictedrecords)
                     {
                         DeltaPopulation prediction = new DeltaPopulation();
-                        prediction.Place = predictedRecord[0];
+                        prediction.Place = predictedRecord[0].TrimStart();
                         prediction.Year = Int32.Parse(predictedRecord[1]);
                         prediction.Month = Int32.Parse(predictedRecord[2]);
                         prediction.DeltaCount = (int)decimal.Parse(predictedRecord[3]);

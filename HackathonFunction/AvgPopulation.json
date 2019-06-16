@@ -1,0 +1,104 @@
+[
+	{
+		"City": "Pune",
+		"Avg": [
+			{
+				"Year": 2016,
+				"Month": 15228
+			},
+			{
+				"Year": 2017,
+				"Month": 14204
+			},
+			{
+				"Year": 2018,
+				"Month": 14186
+			}
+		]
+	},
+	{
+		"City": "Delhi",
+		"Avg": [
+			{
+				"Year": 2016,
+				"Month": 32139
+			},
+			{
+				"Year": 2017,
+				"Month": 34260
+			},
+			{
+				"Year": 2018,
+				"Month": 30922
+			}
+		]
+	},
+	{
+		"City": "Chennai",
+		"Avg": [
+			{
+				"Year": 2016,
+				"Month": 26557
+			},
+			{
+				"Year": 2017,
+				"Month": 27029
+			},
+			{
+				"Year": 2018,
+				"Month": 20209
+			}
+		]
+	},
+	{
+		"City": "Bengaluru",
+		"Avg": [
+			{
+				"Year": 2016,
+				"Month": 65212
+			},
+			{
+				"Year": 2017,
+				"Month": 70222
+			},
+			{
+				"Year": 2018,
+				"Month": 64678
+			}
+		]
+	},
+	{
+		"City": "Hyderabad",
+		"Avg": [
+			{
+				"Year": 2016,
+				"Month": 51030
+			},
+			{
+				"Year": 2017,
+				"Month": 59961
+			},
+			{
+				"Year": 2018,
+				"Month": 57842
+			}
+		]
+	},
+	{
+		"City": "Mumbai",
+		"Avg": [
+			{
+				"Year": 2016,
+				"Month": 41667
+			},
+			{
+				"Year": 2017,
+				"Month": 41667
+			},
+			{
+				"Year": 2018,
+				"Month": 41667
+			}
+		]
+	}
+]

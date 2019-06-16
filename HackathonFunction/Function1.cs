@@ -11,12 +11,16 @@ using System.Text;
 using System.Threading.Tasks;
 
 
+//Github : https://github.com/avinashvijayadevan/HackathonFunction
+
 namespace HackathonFunction
 {
     public static class Function1
     {
         [FunctionName("PensiveJobRun")]
-        public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)]HttpRequestMessage req, TraceWriter log)
+        public static async Task<HttpResponseMessage> Run(
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)]HttpRequestMessage req,
+            TraceWriter log)
         {
             string id = req.GetQueryNameValuePairs().FirstOrDefault(q => string.Compare(q.Key, "id", true) == 0).Value;
             int argumentId = 0;
@@ -58,5 +62,6 @@ namespace HackathonFunction
                       Content = new StringContent(JsonConvert.SerializeObject(new { result = "Hello " + id }), Encoding.UTF8, "application/json")
                   };
         }
+
     }
 }
